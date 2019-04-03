@@ -1,5 +1,4 @@
 self.addEventListener('install', function (event) {
-    // Perform install steps
     console.log("installing!");
 });
 
@@ -12,7 +11,6 @@ self.addEventListener('push', function (event) {
 
     const title = event.data.text();
     const options = {
-    //   image: '/images/demos/unsplash-farzad-nazifi-1600x1100.jpg',
       data: event.data.text()
     };
     self.registration.showNotification(title, options);
